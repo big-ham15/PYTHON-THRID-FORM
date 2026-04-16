@@ -1,0 +1,21 @@
+score = int(input("Enter score: ")) 
+ 
+if score >= 70: 
+    print("A") 
+elif score >= 60: 
+    print("B") 
+else: 
+    print("C")
+
+
+
+    user = input("Username: ") 
+password = input("Password: ") 
+ 
+if user == "admin" and password == cows: 
+    print("Access granted") 
+
+ 
+
+
+ 
