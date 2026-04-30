@@ -1,0 +1,62 @@
+1:
+password = ""
+while password != "kebab":
+  password = input('Please enter a password: ')
+print ("correct password accepted")
+
+
+2:
+answer = "N"
+while answer != "Y":
+  print("Are we there yet?")
+  answer = str(input("Please respond, y or n: ").upper())
+print("Yay! We are there!!")
+
+
+3:
+
+StayInLoop = 1
+while StayInLoop != 2:
+  print("Press 1 for  choice or 2 to exit")
+  StayInLoop = int(input("Please respond, 1 or 2: "))
+print("Exited")
+
+
+4:
+loopCount = 1
+while loopCount < 11:
+  loopCount = loopCount + 1
+  print("Loop", loopCount)
+print("End")
+
+
+5:
+username = ""
+while not username:
+  username = str(input("Enter username: "))
+print("your username", username, "is accepted")
+
+
+6:
+#While loop challenge6 (gcsecs.com)
+
+#There is a line of code missing below
+#The point of al the code is to generate a random number, then..
+#asks the user to try and guess it
+#Can you fix it?
+#Look through the code then enter a fix below
+
+
+import random
+
+number=random.randint(1,10)
+userGuess=int(input("Guess the number between 1-10"))
+
+
+while userGuess != number:
+  if number < userGuess:
+      userGuess=int(input("Guess to High, try again: "))
+  elif number > userGuess:
+      userGuess=int(input("Guess to Low, try again: "))
+
+print("Yay! You got it correct!!!")
